@@ -2,49 +2,55 @@
 <html>
 <body>
 
-<h1>My first PHP page</h1>
+<h1 style="color: brown; text-align: center; ">
+Contact Details
+</h1>
 
+<table width="100%" border="1px" border-color="coral" cellspacing="5" cellpadding="5">
+            <tr>
+                <td style="color: brown;text-align: center">
+                    Name:
+                </td>
+                <td>
+                    Binish Khan
+                </td>
+            </tr>
+            <tr>
+                <td style="color: brown;text-align: center">
+                    Email-id: 
+                </td>
+                <td>
+                    binish.khan190@gmail.com
+                </td>
+            </tr>
+            <tr>
+                <td style="color: brown;text-align: center">
+                    Contact Number:
+                </td>
+                <td>
+                    +14383891299
+                </td>
+            </tr>
+            <tr>
+                <td style="color: brown;text-align: center">
+                    Link of Linkedin Profile
+                </td>
+                <td>
+                    <a href = "https://www.linkedin.com/in/binish-khan-0b8a81a5/"> linkedin Profile </a>
+                </td>
+            </tr>
+        </table>
+
+
+
+<div align='center'>
 <?php
-echo "Hello World!";
+$text = "Thanks for viewing my Portfolio";
+echo "<br>". "<br>". "<br>" ."<h3>"."$text". "</h3>". "<br>";
 ?>
+</div>
+
+
 
 </body>
 </html>
-echo "<table border='1'>
-
-<tr>
-
-<th>Id</th>
-
-<th>name</th>
-
-<th>Mobile</th>
-
-<th>email</th>
-
-</tr>";
-
-<?php
-
-echo “<table>”;
-
-echo “<tr><th>Table Heading</th><th>Table Heading</th><th>Table Heading</th><th>Table Heading</th></tr>”;
-
-echo "<tr><td>Hello world.</td><td>Hello world.</td><td>Hello world.</td><td>Hello world.</td></tr>";
-
-echo “</table”>;
-
-?>
-<?php
-
-/*$txt = "Binish Khan";
-$email = "binish.khan190@gmail.com";
-$no = "+14383891299";
-echo "Name:&nbsp;" .$txt. "<br>";
-echo "Email-id:&nbsp;" .$email. "<br>";
-echo "Contact Number:&nbsp;" .$no. "<br>";
-echo "Link of linkedin Profile:&nbsp;" .'<a href = "https://www.linkedin.com/in/binish-khan-0b8a81a5/"> linkedin Profile </a>'. "<br>";*/
-
-echo "table". "<br>";
-
-?>
