@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Personal Website</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/30> <style type="text/css">
+
+    .container {
+    display: grid;
+    height: 90vh;
+    border: 2px solid blue;
+    grid-template-columns: 850px;
+    grid-template-rows: 150px 1fr 1fr;
+    /*Initially for mobile device (small screen devices)*/
+    grid-template-areas:
+    "hd"
+    "main"
+    "ft";
+    }
+    .box {
+    background: white;
+    border: 1px solid blue;
+    }
+    .boxes {
+    /* can be order:3; to place box 1 at 3 position */
+    width: 230px;
+    padding: 10px;
+    border: 2px solid blue;
+    font-weight: bold;
+    font-size: 24px;
+    background-color: white;
+    color: blue;
+    }
+    .header {
+    background-color: cyan;
+    grid-area: hd;
+    display: flex;
+    border: 2px solid cyan;
+    padding: 20px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    }
+    .content {
+    grid-area: main;
+    }
+    .footer {
+    grid-area: ft;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 10px;
+    font-size: 18px;
+    background-color: cyan;
+    color: blue;
+    }
+    #background {
+    background-image: url(dd.jpg);
+    padding: 20px;
+    }
+    .text {
+    color: white;
+    text-align: center;
+    padding: 200px;
+    font-size: 50px;
+    text-decoration: underline;
+    }
+
+/*for medium screens */
+    @media(min-width: 600px) and (max-width: 1100px){
+        .container {
+    display: grid;
+    border: 2px solid blue;
+    grid-template-columns: 30px 300px;
+    grid-template-rows: 150px 730px 40px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    }
+    }
+
+    /*for large screens */
+    @media(min-width: 1101px){
+        .container {
+    display: grid;
+    border: 2px solid blue;
+    grid-template-columns: 30px 300px;
+    grid-template-rows: 150px 730px 40px;
+    grid-template-areas:
+    "hd hd hd hd hd hd hd hd"
+    "main main main main main main main main"
+    "ft ft ft ft ft ft ft ft";
+    }
+    }
+
+
+
+    </style>
+</head>
+
+<body>
+    <!--Parent element-->
+    <div class="container">
+        <!--items element-->
+        <div class="box header">
+            <div class="boxes"><a href="index.html"><strong><em>HOME</em></strong></a></div>
+            <div class="boxes"><a href="blogpost.html"> <strong><em>PORTFOLIO</em></strong></a></div>
+            <div class="boxes"><a href="login.html"> <strong><em>CONTACT</em></strong></a></div>
+        </div>
+        <div class="box content" id="background"> <strong><em> </em></strong>
+            <div class="text"><em><strong> Welcome To My Personal Blog </strong></em></br> </div>
+        </div>
+        <div class="box footer"> <strong><em> My Blog | 2020 site </em></strong></div>
+    </div>
+</body>
+
+</html>
